@@ -25,4 +25,10 @@ const newsRecommend = {
   ],
 };
 
-export { newsNow, newsRussia, newsRecommend };
+const currencyList = [
+  { name: "USD", course: 1, increment: 0 },
+  { name: "RUB", course: 10, increment: 10 },
+  { name: "EUR", course: 1, increment: -10 },
+];
+
+export { newsNow, newsRussia, newsRecommend, currencyList };
