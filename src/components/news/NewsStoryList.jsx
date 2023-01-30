@@ -9,9 +9,9 @@ import NewsStoryItem from "./NewsStoryItem";
 
 function NewsStoryList({ newsList }) {
   return (
-    <ul style={{ listStyleType: "none" }}>
-      {newsList.map((newsItem, index) => (
-        <NewsStoryItem key={index} newsItem={newsItem} />
+    <ul>
+      {newsList?.list.map((el, idx) => (
+        <NewsStoryItem key={idx} newsItem={el} />
       ))}
     </ul>
   );

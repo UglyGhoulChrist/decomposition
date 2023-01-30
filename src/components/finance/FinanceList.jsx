@@ -1,6 +1,7 @@
 import React from "react";
 import { currencyList } from "../../data/data.js";
 import FinanceItem from "./FinanceItem";
+import "./FinanceList.css";
 
 /**
  * @description Список курса валют
@@ -9,11 +10,11 @@ import FinanceItem from "./FinanceItem";
 
 function FinanceList() {
   return (
-    <div style={{ display: "flex", gap: "2rem" }}>
+    <ul className="list">
       {currencyList.map((currency, idx) => (
         <FinanceItem key={idx} currency={currency} />
       ))}
-    </div>
+    </ul>
   );
 }
 export default FinanceList;

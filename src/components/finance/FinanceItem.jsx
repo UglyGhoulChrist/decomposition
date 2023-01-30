@@ -8,12 +8,10 @@ import React from "react";
 
 function FinanceItem({ currency }) {
   return (
-    <div>
-      {currency.name} <span>{currency.course}</span>
-      <span style={{ fontSize: ".7rem", color: "red" }}>
-        {currency.increment}
-      </span>
-    </div>
+    <li>
+      {currency.name} <span>{currency.course} </span>
+      <span>{currency.increment}</span>
+    </li>
   );
 }
 export default FinanceItem;

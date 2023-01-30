@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../ui/Button";
 
 /**
  * @description Навигации блока поиска информации
@@ -8,11 +9,13 @@ import React from "react";
 
 function SearchNavigation({ searchNavigation }) {
   return (
-    <div>
+    <ul className="list">
       {searchNavigation.map((el, idx) => (
-        <button key={idx}>{el}</button>
+        <li key={idx}>
+          <Button text={el} classes="button" />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 export default SearchNavigation;

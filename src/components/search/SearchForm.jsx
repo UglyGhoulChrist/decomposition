@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchForm.css";
 
 /**
  * @description Форма поиска информации
@@ -7,8 +8,8 @@ import React from "react";
 
 function SearchForm() {
   return (
-    <div>
-      <input type="text" placeholder="Яндекс найдётся всё" />
+    <div className="form">
+      <input className="input" type="text" placeholder="Яндекс найдётся всё" />
       <button>Поиск</button>
     </div>
   );
