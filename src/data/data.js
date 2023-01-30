@@ -31,4 +31,6 @@ const currencyList = [
   { name: "EUR", course: 1, increment: -10 },
 ];
 
-export { newsNow, newsRussia, newsRecommend, currencyList };
+const searchNavigation = ["Поиск", "Картинки", "Видео", "Новости", "Маркет"];
+
+export { newsNow, newsRussia, newsRecommend, currencyList, searchNavigation };
