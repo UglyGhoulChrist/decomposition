@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../UI/Link";
 
 /**
  * @description Новость
@@ -9,10 +10,7 @@ import React from "react";
 function NewsStoryItem({ newsItem }) {
   return (
     <li>
-      <a style={{ display: "flex", gap: "1rem" }} href={newsItem.link}>
-        <span>{newsItem.icon}</span>
-        <h3>{newsItem.title}</h3>
-      </a>
+      <Link {...newsItem} />
     </li>
   );
 }

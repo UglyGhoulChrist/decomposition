@@ -29,12 +29,53 @@ const newsGroup = [
   },
 ];
 
+/**
+ * @description Курсы валют
+ */
+
 const currencyList = [
   { name: "USD", course: 63.29, increment: 0 },
   { name: "EUR", course: 70.86, increment: -10 },
   { name: "GBR", course: 50.24, increment: 10 },
 ];
 
+/**
+ * @description Навигация формы поиска
+ */
 const searchNavigation = ["Поиск", "Картинки", "Видео", "Новости", "Маркет"];
 
-export { newsGroup, currencyList, searchNavigation };
+/**
+ * @description Нижняя секция
+ */
+
+const bottomSection = [
+  {
+    group: "Посещаемое",
+    linkGroup: "linkGroup",
+    list: [
+      { title: "Посещаемое 1", link: "link1" },
+      { title: "Посещаемое 2", link: "link2" },
+      { title: "Посещаемое 3", link: "link3" },
+    ],
+  },
+  {
+    group: "Телепрограмма",
+    linkGroup: "linkGroup",
+    list: [
+      { time: "10:00", title: "НТВ Соловьёв", link: "link4" },
+      { time: "11:00", title: "СТС Воронины", link: "link5" },
+      { time: "12:00", title: "РТР Новости", link: "link6" },
+    ],
+  },
+  {
+    group: "Эфир",
+    linkGroup: "linkGroup",
+    list: [
+      { icon: "ico", title: "YouTube", link: "link7" },
+      { icon: "ico", title: "Blogs", link: "link8" },
+      { icon: "ico", title: "News", link: "link9" },
+    ],
+  },
+];
+
+export { newsGroup, currencyList, searchNavigation, bottomSection };
